@@ -1,7 +1,8 @@
 {
-  "name": "first-app",
+  "name": "comment-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tomerpacific.github.io/starter-project/",
   "dependencies": {
     "@progress/kendo-drawing": "^1.15.0",
     "@progress/kendo-licensing": "^1.2.1",
@@ -34,6 +35,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -55,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
